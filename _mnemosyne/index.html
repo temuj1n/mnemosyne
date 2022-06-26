@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archives photographiques XXX - XXX</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/data.json"></script> 
+</head>
+<body>
+    <h1>Archives photographiques XXX - XXX</h1>
+    <hr class="topline">
+    <h3>Tri par Années</h3>
+<div id="menu">
+    <ul id="menu">
+        <li><a class="current" href="#">Années</a></li>
+        <li><a href="familles.html">Familles</a></li>
+        <li><a href="personnes.html?#">Personnes</a></li>
+    </ul>
+</div>
+<div id="list">
+        <div class="button-group sort-by-button-group">
+          <button class="button" data-sort-value="name">Nom</button>
+          <button class="button" data-sort-value="annee">Année</button>
+        </div>
+        <div class="grid"> 
+        <table id="albums" class="table"> 
+        </table>
+      </div> 
+    <script> 
+      var local_data = albums; 
+      var row_data = ''; 
+      for (var i = 0; i < local_data.length; i++) { 
+        var row_data = row_data + '<tr>' + 
+          ' <td><a target="blank" href="../parse.php?images_dossier=' + local_data[i].date + '_' + local_data[i].nom + '"><div style="background-image: url(img/'
+            + local_data[i].date + '_' + local_data[i].nom + '.jpg)" class="element-item ' + local_data[i].familles + local_data[i].personnes + '"><h3 class="name">' 
+            + local_data[i].nom + '</h3><p class="annee">' + local_data[i].date + '</p></div></a></td></tr>'; 
+      } 
+      var table_body_element = document.createElement('tbody'); 
+      table_body_element.innerHTML = row_data; 
+      document.getElementById('albums').appendChild(table_body_element); 
+    </script> 
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/fontawesome.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/isotope-annees.js"></script>
+<footer>
+    <a class="copyright" href="#">
+        <span class="icone"><i class="fas fa-skull-crossbones" aria-hidden="true"></i></span>
+        <span class="titre">@nicolasbellet.com</span>
+        </a>
+</footer>
+</html>

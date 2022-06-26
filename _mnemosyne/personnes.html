@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archives photographiques XXX - XXX</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/data.json"></script> 
+</head>
+<body>
+    <h1>Archives photographiques XXX - XXX</h1>
+    <hr class="topline">
+    <h3>Tri par Personnes</h3>
+<div id="menu">
+    <ul id="menu">
+        <li><a href="index.html">Années</a></li>
+        <li><a href="familles.html">Familles</a></li>
+        <li><a class="current" href="personnes.html?#">Personnes</a></li>
+    </ul>
+</div>
+
+<div class="button-group filters-button-group">
+
+    <center><span class="male"><button data-filter="*">VOIR TOUS</button></span></center>
+    <br><br>
+<div class="row">
+    <div class="column tree">
+        <i style="font-size: 12px;text-decoration: underline;">Famille BELLET :</i>
+        <ul>
+        <li><span class="male"><button data-filter=".HB">Grand Parent 1</button><span class="dates">1908 - 2002 </span></span></li>
+        <li><span class="female"><button data-filter=".AV">Grand Parent 2</button><span class="dates">1911 - 2004 </span></span></li>
+        <ul>
+            <li><span class="male"><button data-filter=".MIB">XXX BELLET</button><span class="dates">1937 - 1972</span></span></li>
+            <li><span class="female"><button data-filter=".CD">XXX DUCAS</button><span class="dates">1936 - </span></span></li>
+            <ul>
+                <li><span class="male"><button data-filter=".TB">XXX BELLET</button><span class="dates">1965 - </span></span></li>
+            </ul>
+            <li><span class="male"><button data-filter=".GB">XXX BELLET</button><span class="dates">1954 - </span></span></li>
+            <li><span class="female"><button data-filter=".PG">XXX GRABER</button><span class="dates">1953 - </span></span></li>
+            <ul>
+                <li><span class="male"><button data-filter=".SB">XXX BELLET</button><span class="dates">1978 - </span></span></li>
+                <li><span class="female"><button data-filter=".ASB">XXX BELLET</button><span class="dates">1981 - </span></span></li>
+                <li><span class="male"><button data-filter=".NB">Nicolas BELLET</button><span class="dates">1990 - </span></span></li>
+            </ul>
+        </ul>
+    </ul>
+    </div>
+    
+    <div class="column tree">
+        <i style="font-size: 12px;text-decoration: underline;">Famille GRABER :</i>
+    <ul>
+        <li><span class="male"><button data-filter=".BG">Grand Parent 1</button><span class="dates">1921 - 1999</span></span></li>
+        <li><span class="female"><button data-filter=".DH">Grand Parent 2</button><span class="dates">1922 - 1992</span></span></li>
+        <ul>
+            <li><span class="male"><button data-filter=".GG">XXX</button><span class="dates">1950 - </span></span></li>
+            <li><span class="female"><button data-filter=".MCB">YYY</button><span class="dates">1950 - </span></span></li>
+        </ul>
+    </ul>
+    </div>
+    </div>
+    </div>
+
+    <div id="list">
+        <div class="grid"> 
+            <table id="albums" class="table"> 
+            </table>
+          </div> 
+        <script> 
+          var local_data = albums; 
+          var row_data = ''; 
+          for (var i = 0; i < local_data.length; i++) { 
+            var row_data = row_data + '<tr>' + 
+              ' <td><a target="blank" href="../parse.php?images_dossier=' + local_data[i].date + '_' + local_data[i].nom + '"><div style="background-image: url(img/'
+                + local_data[i].date + '_' + local_data[i].nom + '.jpg)" class="element-item ' + local_data[i].personnes + '"><h3 class="name">' 
+                + local_data[i].nom + '</h3><p class="annee">' + local_data[i].date + '</p></div></a></td></tr>'; 
+          } 
+          var table_body_element = document.createElement('tbody'); 
+          table_body_element.innerHTML = row_data; 
+          document.getElementById('albums').appendChild(table_body_element); 
+        </script> 
+        </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/fontawesome.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/isotope-familles.js"></script>
+<footer>
+    <a class="copyright" href="#">
+        <span class="icone"><i class="fas fa-skull-crossbones" aria-hidden="true"></i></span>
+        <span class="titre">@nicolasbellet.com</span>
+        </a>
+</footer>
+</html>
