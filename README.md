@@ -8,11 +8,11 @@
 ### 1. Généralités :
 
 fonctionne avec :
-@html, css et php pour le front
-@json pour la bdd
-@isotope pour le tri des données
-@fontawesome pour le style
-@electron pour une version desktop
+@html, css et php pour le front,
+@json pour la bdd,
+@isotope pour le tri des données,
+@fontawesome pour le style,
+@electron pour une version desktop.
 
 ### 2. Changelog :
 
