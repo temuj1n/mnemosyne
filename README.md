@@ -3,7 +3,7 @@
 ## Archives photographiques
 ### Base de données photographiques familiales
 
-* Version 1.4 *
+*Version 1.4*
 
 ### 1. Généralités :
 
