@@ -49,7 +49,7 @@ fonctionne avec :
         - Anne-Sophie Bellet - ASB
         - Nicolas Bellet - NB
 
-#### 4.2 - PHP : 
+#### 4.2 - PHP :  
 
 - Le fichier index.php protège la base de donnée par un mot de passe
 - Le fichier parse.php permet de parcourir l'ensemble des dossiers par un script récursif qui vient chercher l'ensemble des photos dans un dossier pour les mettre en forme dans une seule page.
