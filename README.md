@@ -1,47 +1,48 @@
 # mnemosyne
 
-## Archives photographiques
-### Base de données photographiques familiales
+## Photographic Archives
+### Family Pictures Database
 
 *Version 1.4*
 
-### 1. Généralités :
+### 1. General :
 
-fonctionne avec :
-@html, css et php pour le front,
-@json pour la bdd,
-@isotope pour le tri des données,
-@fontawesome pour le style,
-@electron pour une version desktop.
+works with :
+- @html, css and php for the front,
+- @json for the data,
+- @isotope to sort values,
+- @fontawesome for the pirate style,
+- @electron for a possible desktop version (not in this repo but you can ask me about it).
 
 ### 2. Changelog :
 
 - 2021.07 - version 1.4 : 
-	    BDD réécrite en JSON.
+	    Database written in JSON.
 	    Web-app responsive.
-	    MAJ Electron win32, darwin64 et arm64.
+	    Update Electron win32, darwin64 and arm64.
 - 2021.05 - version 1.3 :
-    	Reprise de la bdd en javascript et améliorations graphiques.
-    	Intégration Electron et build win32, darwin64 et arm64.
+    	New database written in javascript and graphic optimisations.
+    	New Electron app and build win32, darwin64.
 - 2021.01 - version 1.2 :
-    	Ajout de contenu (confidentiel).
+    	Data update and added more picture.
 - 2020.12 - version 1.1 : 
-    	Première version mise à disposition.
+    	First try and launching the database in my family.
     
 ### 3. Instructions :
 
-- Le dossier "_mnemosyne" ne doit pas être déplacé.
-	Ni tout autre dossier à l'intérieur de celui-ci.
+- The folder named "_mnemosyne" should NOT be moved.
+	Or any other folder inside.
 
-### 4. Code HTML - JS - PHP :
+### 4. Code specs :
 
 #### 4.1 - JSON :
 
-- Le fichier data.json contient l'ensemble de la base de données
-- Les familles sont taguées par le nom en entier.
-- Les personnes sont taguées selon leurs initiales :
+- The file data.json contain the whole database
+- A variable loop through all this data to create the table and links
+- Family names are taggued by their entire name.
+- People are taggued with their initials :
        
-        par exemple :
+        for instance :
 
         - Bernard Graber - BG
         - Henri Bellet - HB
@@ -51,5 +52,5 @@ fonctionne avec :
 
 #### 4.2 - PHP :  
 
-- Le fichier index.php protège la base de donnée par un mot de passe
-- Le fichier parse.php permet de parcourir l'ensemble des dossiers par un script récursif qui vient chercher l'ensemble des photos dans un dossier pour les mettre en forme dans une seule page.
+- The file index.php protects the database with a password
+- The file parse.php allows you to go through all folders with a recursive script that gets all the images inside a folder to put them in one single page.
