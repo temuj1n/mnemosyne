@@ -13,6 +13,9 @@
 	
 	//using glob() function get images 
 	$files = glob("*.{jpg,jpeg,png,gif,JPG,JPEG,PNG,GIF}", GLOB_BRACE );
+
+	//sort images in natural order
+	natsort($files);
 	
 	//again change the directory to working directory
 	chdir($working_dir);
