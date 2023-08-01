@@ -2,7 +2,7 @@
 $mot_de_passe = '****';
 if (isset($_POST['variable_du_formulaire']) AND $_POST['variable_du_formulaire'] == $mot_de_passe)
 {
-    header( 'Location: ./_mnemosyne/1-html/index.html' ); // Redirige vers l'accueil du site
+    header( 'Location: ./_mnemosyne/index.php' ); // Redirige vers l'accueil du site
     exit();
 }
 ?>
@@ -34,7 +34,7 @@ if (isset($_POST['variable_du_formulaire']) AND $_POST['variable_du_formulaire']
     }
     else
     {
-        header( 'Location: ./_mnemosyne/index.html' ); // Redirige vers l'accueil du site
+        header( 'Location: ./_mnemosyne/index.php' ); // Redirige vers l'accueil du site
         exit();
     }
 ?>
