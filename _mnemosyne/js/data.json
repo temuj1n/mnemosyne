@@ -1,55 +1,102 @@
-var albums = [{
-"date":"1990_11",
-"nom":"NICOLAS",
-"familles":["bellet"],
-"personnes":["NB PG"]
-},
 {
-"date":"1991_01",
-"nom":"AVORIAZ",
-"familles":["bellet"],
-"personnes":["SB NB PG"]
-},
-{
-"date":"1992_08",
-"nom":"ETE",
-"familles":["bellet"],
-"personnes":["PG GB ASB SB NB AV HB"]
-},
-{
-"date":"1992_08",
-"nom":"SABLES-D-OLONNE-1",
-"familles":["bellet graber"],
-"personnes":["PG GB SB ASB NB LG"]
-},
-{
-"date":"1992_08",
-"nom":"SABLES-D-OLONNE-2",
-"familles":["bellet graber"],
-"personnes":["PG GB SB ASB NB LG"]
-},
-{
-"date":"1992_08",
-"nom":"STEPHANE-ANNE-SOPHIE-NICOLAS",
-"familles":["bellet"],
-"personnes":["SB ASB NB"]
-},
-{
-"date":"1994_03",
-"nom":"PAQUES-ANNECY",
-"familles":["bellet"],
-"personnes":["GB PG SB ASB NB"]
-},
-{
-"date":"1996_08",
-"nom":"ANNIVERSAIRE-NICOLAS",
-"familles":["bellet"],
-"personnes":["GB PG ASB NB"]
-},
-{
-"date":"1998_04",
-"nom":"ANNIVERSAIRES-PAQUES",
-"familles":["bellet graber"],
-"personnes":["ASB SB NB PG BG HB TB"]
+    "commentaires": "toutes les données de lieux sont à convertir avec l'API https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/utils/geocoder",
+    "lieux": [{
+            "nom": "annecy",
+            "description": "Lac d'Annecy",
+            "coordinates": [45.792887, 6.129212]
+        },
+        {
+            "nom": "avoriaz",
+            "description": "Avoriaz",
+            "coordinates": [46.191907, 6.771746]
+        },
+        {
+            "nom": "sables-olonne",
+            "description": "Sables d'Olonne",
+            "coordinates": [46.494375, -1.789875]
+        },
+        {
+            "nom": "saint-andre",
+            "description": "23 rue de la Croix Blanche\n10120 Saint-André-les-Vergers",
+            "coordinates": [48.276755, 4.055822]
+        },
+        {
+            "nom": "troyes",
+            "description": "Troyes",
+            "coordinates": [48.266203, 4.041109]
+        }
+    ],
+    "albums": [{
+            "date": "1990_11",
+            "nom": "NICOLAS",
+            "familles": ["bellet"],
+            "personnes": ["NB PG"],
+            "adresse1": "saint-andre",
+            "adresse2": ""
+        },
+        {
+            "date": "1991_01",
+            "nom": "AVORIAZ",
+            "familles": ["bellet"],
+            "personnes": ["SB NB PG"],
+            "adresse1": "avoriaz",
+            "adresse2": ""
+        },
+        {
+            "date": "1992_08",
+            "nom": "ETE",
+            "familles": ["bellet genet valleteau"],
+            "personnes": ["PG GB ASB SB NB AV HB"],
+            "adresse1": "",
+            "adresse2": ""
+        },
+        {
+            "date": "1992_08",
+            "nom": "SABLES-D-OLONNE-1",
+            "familles": ["bellet graber"],
+            "personnes": ["PG GB SB ASB NB LG"],
+            "adresse1": "sables-olonne",
+            "adresse2": ""
+        },
+        {
+            "date": "1992_08",
+            "nom": "SABLES-D-OLONNE-2",
+            "familles": ["bellet graber"],
+            "personnes": ["PG GB SB ASB NB LG"],
+            "adresse1": "sables-olonne",
+            "adresse2": ""
+        },
+        {
+            "date": "1992_08",
+            "nom": "STEPHANE-ANNE-SOPHIE-NICOLAS",
+            "familles": ["bellet"],
+            "personnes": ["SB ASB NB"],
+            "adresse1": "",
+            "adresse2": ""
+        },
+        {
+            "date": "1994_03",
+            "nom": "PAQUES-ANNECY",
+            "familles": ["bellet"],
+            "personnes": ["GB PG SB ASB NB"],
+            "adresse1": "annecy",
+            "adresse2": ""
+        },
+        {
+            "date": "1996_08",
+            "nom": "ANNIVERSAIRE-NICOLAS",
+            "familles": ["bellet"],
+            "personnes": ["GB PG ASB NB"],
+            "adresse1": "",
+            "adresse2": ""
+        },
+        {
+            "date": "1998_04",
+            "nom": "ANNIVERSAIRES-PAQUES",
+            "familles": ["bellet graber"],
+            "personnes": ["ASB SB NB PG BG HB TB"],
+            "adresse1": "",
+            "adresse2": ""
+        }
+    ]
 }
-]
