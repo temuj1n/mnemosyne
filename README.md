@@ -3,19 +3,24 @@
 ## Photographic Archives
 ### Family Pictures Database
 
-*Version 1.4*
+*Version 2.0*
 
 ### 1. General :
 
 works with :
-- @html, css and php for the front,
+- @php, html and css for the front,
 - @json for the data,
 - @isotope to sort values,
 - @fontawesome for the pirate style,
-- @electron for a possible desktop version (not in this repo but you can ask me about it).
 
 ### 2. Changelog :
 
+- 2022.12 - version 2.0 :
+  	    Remove electron, too fuzy,
+  	    Rewrote everything in php : including files is much effective,
+  	    Rewrote css with 1 variable to switch accent color,
+  	    Added audio and video pages, both automaticly add things to read from a folder.
+  	    Added adresses in the JSON and a places page. Need to add yourself your Google Maps API Key.
 - 2021.07 - version 1.4 : 
 	    Database written in JSON.
 	    Web-app responsive.
@@ -31,7 +36,7 @@ works with :
 ### 3. Instructions :
 
 - The folder named "_mnemosyne" should NOT be moved.
-	Or any other folder inside.
+  Or any other folder inside.
 
 ### 4. Code specs :
 
